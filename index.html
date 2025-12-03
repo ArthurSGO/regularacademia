@@ -1,25 +1,795 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Praticando</title>
+    <title>Guia de Máquinas | Ana</title>
 </head>
 <body>
-    <header>
-        <img src="imagens/Logo.png" class="logo">
+    <header class="topbar">
+        <div class="brand">
+            <img src="imagens/Logo.png" alt="Logo" class="logo">
+            <div class="brand-text">
+                <p class="eyebrow">feito pra Ana (ou aripiprazol)</p>
+                <h1>Guia rápido de ajustes</h1>
+            </div>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Teste</a></li>
+                <li><a href="#lista">Máquinas</a></li>
+                <li><a href="#favoritos">Favoritos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Máquinas</h1>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="tag">mobile first</p>
+                <h2>Oi, Ana! Escolha o aparelho e siga um passo a passo super detalhado para ajustar rapidinho.</h2>
+                <p class="lead">Toque em um cartão para ver instruções completas. O layout é otimizado para celular com toques grandes e animações suaves.</p>
+                <div class="actions">
+                    <a class="cta" href="#lista">Ver todas as máquinas</a>
+                    <a class="ghost" href="#favoritos">Favoritos rápidos</a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="phone-shell">
+                    <div class="screen">
+                        <span class="pulse"></span>
+                        <p>Arraste, toque, ajuste<br><strong>e treine sem estresse.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        
+        <section class="controls" id="lista">
+            <div class="search-block">
+                <label for="search">Buscar equipamento</label>
+                <input type="text" id="search" placeholder="Ex: remada, leg press, ombro" aria-label="Buscar equipamento">
+            </div>
+            <div class="chip-row" id="favoritos">
+                <button class="chip" data-filter="pernas">Pernas</button>
+                <button class="chip" data-filter="costas">Costas</button>
+                <button class="chip" data-filter="peito">Peito</button>
+                <button class="chip" data-filter="ombros">Ombros</button>
+                <button class="chip" data-filter="bracos">Braços</button>
+                <button class="chip" data-filter="core">Core</button>
+                <button class="chip" data-filter="todos">Todos</button>
+            </div>
+        </section>
+
+        <section class="grid" aria-live="polite">
+            <article class="equipment-card" data-tags="pernas gluteo" data-name="Leg Press 45">
+                <header>
+                    <div>
+                        <p class="mini">Pernas</p>
+                        <h3>Leg Press 45°</h3>
+                    </div>
+                    <span class="icon">🦵</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Solte a trava lateral com cuidado e regule o trilho para que o assento permita 90° de flexão do joelho sem tirar o quadril do encosto.</li>
+                        <li>Ajuste o encosto para que a lombar fique toda apoiada e o quadril não gire; use almofada extra se precisar.</li>
+                        <li>Posicione os pés na plataforma: largura dos ombros, pontas levemente abertas para poupar joelhos.</li>
+                        <li>Empurre sem trancar os joelhos; desça controlando até sentir coxa encostar levemente na barriga, mantendo lombar colada.</li>
+                        <li>Use as travas de segurança na altura do seu alongamento máximo para não ficar presa caso falte força.</li>
+                        <li>Respire soltando o ar ao empurrar e inspirando na descida, mantendo o olhar para frente e a cabeça apoiada.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas extensora" data-name="Cadeira Extensora">
+                <header>
+                    <div>
+                        <p class="mini">Pernas</p>
+                        <h3>Cadeira Extensora</h3>
+                    </div>
+                    <span class="icon">🪑</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Regule a altura do encosto para que o joelho fique alinhado ao eixo lateral indicado na máquina.</li>
+                        <li>Posicione o rolo acolchoado logo acima do peito do pé; se estiver sobre a canela, baixe um nível.</li>
+                        <li>Ajuste o limitador de amplitude para evitar hiperextensão: pare pouco antes de esticar totalmente.</li>
+                        <li>Segure as alças laterais, mantenha lombar e glúteo encostados e peito aberto.</li>
+                        <li>Eleve as pernas soltando o ar, pause um segundo no topo para sentir o quadríceps e desça controlando.</li>
+                        <li>Evite balançar o tronco; se precisar, diminua a carga para manter o movimento suave.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas posterior" data-name="Cadeira Flexora">
+                <header>
+                    <div>
+                        <p class="mini">Pernas</p>
+                        <h3>Cadeira Flexora</h3>
+                    </div>
+                    <span class="icon">🎢</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o encosto para alinhar o centro do joelho ao eixo lateral do aparelho.</li>
+                        <li>Coloque o rolo inferior logo acima do calcanhar; aperte a trava para não escorregar.</li>
+                        <li>Use o cinto ou suporte de coxa para fixar o quadril e evitar que ele levante.</li>
+                        <li>Flexione os joelhos levando o rolo em direção aos glúteos, sem arquear a lombar.</li>
+                        <li>Controle a volta, mantendo os pés relaxados e o abdômen levemente contraído.</li>
+                        <li>Se sentir o quadril subir, diminua a carga e ajuste o encosto um furo à frente.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas gluteo" data-name="Glúteo 4 apoios">
+                <header>
+                    <div>
+                        <p class="mini">Glúteo</p>
+                        <h3>Glúteo 4 apoios</h3>
+                    </div>
+                    <span class="icon">🍑</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o apoio de peito para que os ombros fiquem alinhados e confortáveis, sem esmagar o pescoço.</li>
+                        <li>Coloque o pé ou a coxa na plataforma móvel; se for almofada, mantenha a dobra do joelho alinhada ao ponto indicado.</li>
+                        <li>Mantenha o quadril quadrado com o chão, ativando abdômen para evitar rotação.</li>
+                        <li>Empurre a plataforma para trás e para cima até extensão do quadril, sem exagerar na lombar.</li>
+                        <li>Retorne devagar até antes de o peso encostar, mantendo tensão contínua.</li>
+                        <li>Use amplitude que permita estabilidade; ajuste a altura da almofada se sentir desconforto no joelho.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas gluteo" data-name="Smith Agachamento">
+                <header>
+                    <div>
+                        <p class="mini">Pernas</p>
+                        <h3>Agachamento no Smith</h3>
+                    </div>
+                    <span class="icon">🏋️‍♀️</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste os limitadores de segurança logo abaixo da sua amplitude máxima para escapar rápido em emergência.</li>
+                        <li>Posicione a barra sobre o trapézio (não no pescoço) e fique com os pés levemente à frente da linha da barra.</li>
+                        <li>Destrave girando a barra, mantenha peito aberto e desça projetando o quadril para trás.</li>
+                        <li>Desça até a coxa ficar paralela ao chão ou conforme mobilidade, mantendo joelhos alinhados com pés.</li>
+                        <li>Suba empurrando o chão, sem hiperestender joelhos; trave a barra apenas ao final da série.</li>
+                        <li>Se o joelho avançar muito, avance os pés um pouco e rebaixe a barra um furo para melhorar a alavanca.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas gluteo" data-name="Hack Machine">
+                <header>
+                    <div>
+                        <p class="mini">Pernas</p>
+                        <h3>Hack Machine</h3>
+                    </div>
+                    <span class="icon">🛡️</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste os ombreiras para apoiar bem acima do trapézio e não sobre o pescoço.</li>
+                        <li>Posicione os pés na plataforma com largura dos ombros e um pouco mais altos se quiser mais glúteo.</li>
+                        <li>Solte as travas laterais e desça controlando, mantendo a lombar colada no encosto.</li>
+                        <li>Evite que o joelho ultrapasse muito a ponta do pé se houver dor; ajuste a posição dos pés.</li>
+                        <li>Suba até quase estender, sem travar; reengate as travas ao terminar a série antes de sair.</li>
+                        <li>Use meias compressivas ou calçado firme para evitar escorregar na plataforma.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas gluteo" data-name="Cadeira Abdutora">
+                <header>
+                    <div>
+                        <p class="mini">Pernas</p>
+                        <h3>Cadeira Abdutora</h3>
+                    </div>
+                    <span class="icon">🧘‍♀️</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o assento para que o joelho fique alinhado ao quadril e as costas apoiadas.</li>
+                        <li>Regule a abertura inicial conforme sua mobilidade; comece fechado se sentir desconforto.</li>
+                        <li>Mantenha as pernas na parte externa das almofadas, segurando as alças para estabilizar.</li>
+                        <li>Afaste as pernas até sentir o glúteo médio trabalhar, sem jogar o tronco para trás.</li>
+                        <li>Retorne devagar, evitando que as placas batam; controle o movimento com o abdômen ativo.</li>
+                        <li>Se escorregar, posicione uma toalha nas almofadas e ajuste novamente a amplitude.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas adutora" data-name="Cadeira Adutora">
+                <header>
+                    <div>
+                        <p class="mini">Pernas</p>
+                        <h3>Cadeira Adutora</h3>
+                    </div>
+                    <span class="icon">🧲</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Regule o assento para encostar lombar e quadril, mantendo o joelho alinhado ao quadril.</li>
+                        <li>Escolha a abertura inicial confortável e coloque a parte interna das coxas nas almofadas.</li>
+                        <li>Segure as alças e feche as pernas ativando adutores, sem perder a posição do tronco.</li>
+                        <li>Pause um segundo no final e abra de forma controlada, sem soltar as placas.</li>
+                        <li>Se sentir o joelho girar para dentro, reduza carga e mantenha a ponta do pé neutra.</li>
+                        <li>Respire de forma fluida: solte o ar ao fechar, inspire ao abrir.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas panturrilha" data-name="Panturrilha Sentada">
+                <header>
+                    <div>
+                        <p class="mini">Panturrilha</p>
+                        <h3>Panturrilha Sentada</h3>
+                    </div>
+                    <span class="icon">🦶</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste a almofada de apoio sobre a parte superior da coxa, sem comprimir o joelho.</li>
+                        <li>Coloque apenas a ponta dos pés na plataforma, deixando os calcanhares livres para descer bem.</li>
+                        <li>Solte a trava e desça os calcanhares até sentir alongamento controlado no tríceps sural.</li>
+                        <li>Suba forte, empurrando o chão com a ponta do pé e contraindo no topo por 1-2 segundos.</li>
+                        <li>Mantenha o tronco neutro e evite balançar; use as alças laterais para estabilidade.</li>
+                        <li>Se escorregar, ajuste a borracha da plataforma ou use tênis de sola aderente.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas panturrilha" data-name="Panturrilha em Pé">
+                <header>
+                    <div>
+                        <p class="mini">Panturrilha</p>
+                        <h3>Panturrilha em Pé</h3>
+                    </div>
+                    <span class="icon">🧗‍♀️</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste a altura dos ombreiras para que fiquem logo acima dos ombros sem pressionar o pescoço.</li>
+                        <li>Posicione a ponta dos pés na borda da plataforma e firme o core para não balançar.</li>
+                        <li>Suba na meia ponta para destravar o aparelho e mantenha joelhos levemente flexionados.</li>
+                        <li>Desça devagar os calcanhares até sentir alongamento e suba com força, segurando 1 segundo no topo.</li>
+                        <li>Evite projetar o quadril para frente; mantenha alinhamento da cabeça ao quadril.</li>
+                        <li>Trave novamente antes de sair, apoiando os calcanhares totalmente na base.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="costas remada" data-name="Remada Baixa">
+                <header>
+                    <div>
+                        <p class="mini">Costas</p>
+                        <h3>Remada Baixa</h3>
+                    </div>
+                    <span class="icon">🚣‍♀️</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o apoio de peito ou a almofada do banco para que o cabo fique na linha do umbigo.</li>
+                        <li>Use a pegada indicada (triângulo ou barra) e sente-se mantendo coluna neutra.</li>
+                        <li>Puxe primeiro encaixando as escápulas para trás e para baixo, depois flexione os cotovelos.</li>
+                        <li>Traga o cabo até encostar levemente no abdômen, sem jogar o tronco para trás.</li>
+                        <li>Estenda os braços controlando a volta e mantendo o peito aberto.</li>
+                        <li>Se a lombar cansar, apoie os pés mais perto e reduza a carga para priorizar a postura.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="costas remada" data-name="Remada Cavalinho">
+                <header>
+                    <div>
+                        <p class="mini">Costas</p>
+                        <h3>Remada Cavalinho</h3>
+                    </div>
+                    <span class="icon">🏇</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o suporte de peito (se houver) para manter a coluna neutra e o cabo alinhado ao umbigo.</li>
+                        <li>Coloque os pés bem firmes na plataforma e agarre a alça com pegada neutra ou pronada.</li>
+                        <li>Comece contraindo as escápulas e puxe o peso em direção ao quadril.</li>
+                        <li>Evite balançar o tronco; se precisar, apoie o peito ou reduza a carga.</li>
+                        <li>Controle a descida, mantendo tensão nos dorsais, sem deixar o peso bater.</li>
+                        <li>Mantenha o pescoço neutro olhando para o chão a alguns passos à frente.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="costas barra" data-name="Puxada Alta">
+                <header>
+                    <div>
+                        <p class="mini">Costas</p>
+                        <h3>Puxada na Frente</h3>
+                    </div>
+                    <span class="icon">📏</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste a coxa acolchoada para prender as pernas sem desconforto; ela evita que você suba.</li>
+                        <li>Segure a barra com pegada aberta, polegar envolvendo, ombros longe das orelhas.</li>
+                        <li>Inicie puxando as escápulas para baixo (como se guardasse o pescoço), depois flexione os cotovelos.</li>
+                        <li>Traga a barra até a parte superior do peito, mantendo o tronco levemente inclinado para trás.</li>
+                        <li>Suba controlando até quase estender os braços, mantendo a tensão nas costas.</li>
+                        <li>Se balançar, reduza a carga e cruze os pés atrás para estabilizar.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="costas barra" data-name="Pull down articulado">
+                <header>
+                    <div>
+                        <p class="mini">Costas</p>
+                        <h3>Puxada Articulada</h3>
+                    </div>
+                    <span class="icon">🪢</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o assento e o apoio de coxa para que as mãos fiquem acima da cabeça no ponto inicial.</li>
+                        <li>Mantenha a pegada neutra nas alças móveis e sente-se com o tronco ereto.</li>
+                        <li>Comece deprimindo as escápulas, depois puxe as alças ao lado do peitoral.</li>
+                        <li>Segure um segundo no final e retorne controlando a abertura, sem deixar o peso bater.</li>
+                        <li>Evite inclinar demais o tronco; a articulação já guia o movimento.</li>
+                        <li>Se sentir ombros subindo, pense em afastar as orelhas e manter peito aberto.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="costas remada" data-name="Remada Unilateral Cabo">
+                <header>
+                    <div>
+                        <p class="mini">Costas</p>
+                        <h3>Remada Unilateral no Cabo</h3>
+                    </div>
+                    <span class="icon">🪝</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Posicione o banco ou joelho de apoio de forma que o cabo fique alinhado ao seu umbigo.</li>
+                        <li>Ajuste a polia na altura da costela média para uma trajetória horizontal.</li>
+                        <li>Segure a alça com a mão oposta ao apoio, mantendo ombro longe da orelha.</li>
+                        <li>Puxe encaixando escápula e depois o cotovelo para trás, mantendo o tronco estável.</li>
+                        <li>Desça devagar até o braço quase estender, sem girar o tronco.</li>
+                        <li>Repita do outro lado, conferindo se a mesma configuração foi mantida.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="peito supino" data-name="Supino Maquina">
+                <header>
+                    <div>
+                        <p class="mini">Peito</p>
+                        <h3>Supino Máquina</h3>
+                    </div>
+                    <span class="icon">🛡️</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o banco para que as alças fiquem na linha do meio do peito.</li>
+                        <li>Encoste a lombar e mantenha os pés firmes no chão para estabilidade.</li>
+                        <li>Segure as alças com polegar envolvendo e cotovelos levemente abaixo da linha do ombro.</li>
+                        <li>Empurre as alças à frente soltando o ar, sem travar os cotovelos ao final.</li>
+                        <li>Retorne controlando, sentindo a escápula deslizar para trás no encosto.</li>
+                        <li>Use o ajuste de amplitude (se houver) para evitar alongamento excessivo nos ombros.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="peito peito" data-name="Peck Deck">
+                <header>
+                    <div>
+                        <p class="mini">Peito</p>
+                        <h3>Peck Deck</h3>
+                    </div>
+                    <span class="icon">🪽</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o encosto para alinhar ombros e cotovelos; as almofadas devem ficar na altura do antebraço.</li>
+                        <li>Regule a abertura inicial para evitar alongar demais a parte frontal do ombro.</li>
+                        <li>Segure as alças ou apoie antebraços, mantendo o cotovelo na mesma linha do punho.</li>
+                        <li>Feche os braços como se abraçasse alguém, concentrando o esforço no peito.</li>
+                        <li>Pause 1 segundo com as mãos próximas e volte lentamente até antes das placas encostarem.</li>
+                        <li>Mantenha o pescoço neutro e ombros longe das orelhas para não sobrecarregar trapézio.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="peito ombros" data-name="Crossover">
+                <header>
+                    <div>
+                        <p class="mini">Peito</p>
+                        <h3>Crossover (Polia Alta)</h3>
+                    </div>
+                    <span class="icon">🪢</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste as polias na altura acima dos ombros e selecione uma carga leve para aprender o controle.</li>
+                        <li>Dê um passo à frente, pés alternados, leve inclinação do tronco e abdômen firme.</li>
+                        <li>Comece com braços semi flexionados e mãos alinhadas aos ombros.</li>
+                        <li>Traga as mãos à frente do peito formando um "X" ou encostando polegar em polegar.</li>
+                        <li>Segure 1 segundo, sinta o peito contrair e abra lentamente até sentir alongamento moderado.</li>
+                        <li>Evite mexer demais o tronco; se balançar, volte os pés um pouco e reduza a carga.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="ombros" data-name="Elevação Lateral Máquina">
+                <header>
+                    <div>
+                        <p class="mini">Ombros</p>
+                        <h3>Elevação Lateral Máquina</h3>
+                    </div>
+                    <span class="icon">🎡</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o assento para que o eixo da máquina fique alinhado ao meio do ombro.</li>
+                        <li>Apoie a face externa do braço ou cotovelo nas almofadas, mantendo punhos neutros.</li>
+                        <li>Inicie com ombros longe das orelhas e abdômen ativo.</li>
+                        <li>Eleve os braços até a linha do ombro ou um pouco acima, sem rodar o tronco.</li>
+                        <li>Pare um segundo no topo e desça devagar até sentir tensão contínua.</li>
+                        <li>Se o trapézio dominar, reduza a carga e pense em empurrar com o cotovelo, não com a mão.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="ombros" data-name="Desenvolvimento Ombros">
+                <header>
+                    <div>
+                        <p class="mini">Ombros</p>
+                        <h3>Desenvolvimento Máquina</h3>
+                    </div>
+                    <span class="icon">🧱</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o assento para que as alças fiquem ligeiramente abaixo da linha do queixo.</li>
+                        <li>Mantenha a lombar apoiada e os pés firmes; se houver cinto, prenda levemente.</li>
+                        <li>Segure as alças com pegada neutra ou pronada, cotovelos sob as mãos.</li>
+                        <li>Empurre para cima sem travar os cotovelos, mantendo a cabeça neutra.</li>
+                        <li>Desça até o cotovelo ficar na linha do ombro, evitando alongar demais.</li>
+                        <li>Se os ombros subirem, pense em afastar as orelhas e reduza a carga.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="bracos biceps" data-name="Rosca Scott">
+                <header>
+                    <div>
+                        <p class="mini">Braços</p>
+                        <h3>Rosca Scott Máquina</h3>
+                    </div>
+                    <span class="icon">🌀</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o assento para que a axila fique apoiada na borda superior do banco inclinado.</li>
+                        <li>Segure a barra ou alça com pegada confortável, punhos alinhados ao antebraço.</li>
+                        <li>Comece com os braços quase estendidos, sem hiperextender o cotovelo.</li>
+                        <li>Flexione os cotovelos trazendo a alça em direção ao rosto, sem tirar o peito do apoio.</li>
+                        <li>Controle a descida até o braço quase estender, mantendo tensão no bíceps.</li>
+                        <li>Se sentir o ombro entrando, aproxime os cotovelos e reduza a carga.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="bracos triceps" data-name="Triceps Testa Máquina">
+                <header>
+                    <div>
+                        <p class="mini">Braços</p>
+                        <h3>Tríceps Testa Máquina</h3>
+                    </div>
+                    <span class="icon">🎯</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o encosto para que o eixo da máquina fique alinhado aos cotovelos.</li>
+                        <li>Segure as alças mantendo os cotovelos fixos na linha dos ombros.</li>
+                        <li>Estenda os cotovelos empurrando a alça para longe da testa, sem mover o ombro.</li>
+                        <li>Volte controlando até sentir alongamento leve, sem deixar os cotovelos abrirem.</li>
+                        <li>Use o apoio de cabeça se houver para manter cervical neutra.</li>
+                        <li>Se o antebraço bater na almofada, ajuste um nível para cima o encosto.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="bracos triceps" data-name="Triceps Corda">
+                <header>
+                    <div>
+                        <p class="mini">Braços</p>
+                        <h3>Tríceps na Polia (Corda)</h3>
+                    </div>
+                    <span class="icon">🪢</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Coloque a polia no topo e fixe a corda; fique a um passo do aparelho.</li>
+                        <li>Mantenha os cotovelos próximos ao corpo e ligeiramente à frente do tronco.</li>
+                        <li>Empurre a corda para baixo abrindo as pontas no final para maior ativação.</li>
+                        <li>Volte controlando até 90° no cotovelo, sem deixar ombros subirem.</li>
+                        <li>Incline levemente o tronco e ative o abdômen para estabilidade.</li>
+                        <li>Se escorregar, use uma base com pés alternados e reduza a carga.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="core" data-name="Abdominal Máquina">
+                <header>
+                    <div>
+                        <p class="mini">Core</p>
+                        <h3>Abdominal Máquina</h3>
+                    </div>
+                    <span class="icon">🧊</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o assento para que o eixo de rotação fique na altura do umbigo.</li>
+                        <li>Segure as alças ou apoie os ombros conforme o modelo, mantendo coluna neutra no início.</li>
+                        <li>Flexione a coluna enrolando do peito ao quadril, sem puxar com braços.</li>
+                        <li>Retorne controlando a subida das placas até quase tocar, mantendo tensão.</li>
+                        <li>Respire soltando o ar ao flexionar e inspirando ao voltar.</li>
+                        <li>Se sentir pescoço, encoste a cabeça no encosto e reduza amplitude.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="core lombar" data-name="Extensora Lombar">
+                <header>
+                    <div>
+                        <p class="mini">Core</p>
+                        <h3>Extensora Lombar</h3>
+                    </div>
+                    <span class="icon">🪨</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o apoio de coxa para ficar logo abaixo da crista ilíaca, liberando o quadril para flexionar.</li>
+                        <li>Coloque os pés nos suportes e cruze os braços no peito ou segure a anilha junto ao tronco.</li>
+                        <li>Desça flexionando o quadril até sentir alongar a cadeia posterior, mantendo costas neutras.</li>
+                        <li>Suba alinhando tronco com pernas, sem hiperextender; pare quando estiver reta.</li>
+                        <li>Use a almofada do tornozelo para apoio confortável e não travar o joelho.</li>
+                        <li>Se doer lombar, reduza a amplitude ou segure apenas o peso do corpo.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="core estabilizacao" data-name="Prancha guiada">
+                <header>
+                    <div>
+                        <p class="mini">Core</p>
+                        <h3>Prancha Guiada</h3>
+                    </div>
+                    <span class="icon">🧭</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o apoio de cotovelos na altura que permita ombro alinhado ao cotovelo.</li>
+                        <li>Posicione os pés na plataforma móvel ou sliders, ativando glúteos e abdômen.</li>
+                        <li>Mantenha a cabeça neutra olhando para o chão e respire curtinho.</li>
+                        <li>Se a máquina tiver variação lateral, abra poucos centímetros mantendo quadril estável.</li>
+                        <li>Use tempo sob tensão: comece com 20-30 segundos e avance conforme conforto.</li>
+                        <li>Para sair, abaixe os joelhos antes de largar as alças para evitar deslize.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="peito core" data-name="Pull over maquina">
+                <header>
+                    <div>
+                        <p class="mini">Costas/Core</p>
+                        <h3>Pull-over Máquina</h3>
+                    </div>
+                    <span class="icon">🌉</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o assento para que as mãos alcancem as alças com cotovelos levemente flexionados.</li>
+                        <li>Prenda as coxas com o apoio para não subir durante o movimento.</li>
+                        <li>Inicie com os braços acima da cabeça, escápulas encaixadas.</li>
+                        <li>Puxe as alças para baixo até alinhar com o quadril, mantendo o braço semi flexionado.</li>
+                        <li>Retorne controlando, sentindo alongar lats e peitoral sem forçar o ombro.</li>
+                        <li>Se sentir ombro pinçar, reduza amplitude e mantenha o cotovelo mais dobrado.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas gluteo" data-name="Stepup caixa">
+                <header>
+                    <div>
+                        <p class="mini">Pernas</p>
+                        <h3>Step-up na Caixa Alta</h3>
+                    </div>
+                    <span class="icon">🪜</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste a altura da caixa para que o joelho forme ângulo de 90° ou menor no degrau.</li>
+                        <li>Coloque todo o pé da perna de apoio na caixa, mantendo o tronco ereto.</li>
+                        <li>Empurre o chão com o calcanhar para subir, evitando impulso da perna de trás.</li>
+                        <li>Traga a outra perna junto com controle e desça pelo mesmo lado.</li>
+                        <li>Use halteres leves ou apoio lateral se precisar de equilíbrio.</li>
+                        <li>Se sentir joelho, reduza a altura da caixa ou execute mais devagar.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="core cardio" data-name="Escada Infinita">
+                <header>
+                    <div>
+                        <p class="mini">Cardio</p>
+                        <h3>Escada Infinita</h3>
+                    </div>
+                    <span class="icon">🪜</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste a velocidade inicial baixa para se familiarizar com a cadência.</li>
+                        <li>Segure levemente o corrimão apenas para equilíbrio, sem apoiar o peso.</li>
+                        <li>Pise com o pé inteiro no degrau e mantenha postura ereta, olhando para frente.</li>
+                        <li>Aumente a velocidade gradualmente após 1-2 minutos de adaptação.</li>
+                        <li>Para parar, use o botão de emergência ou reduza a velocidade até zero antes de descer.</li>
+                        <li>Evite saltar entre degraus; passos curtos e constantes reduzem o risco de tropeço.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="costas peito" data-name="Barra Fixa Assistida">
+                <header>
+                    <div>
+                        <p class="mini">Costas/Peito</p>
+                        <h3>Barra Fixa Assistida</h3>
+                    </div>
+                    <span class="icon">🪄</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Selecione o peso de assistência (quanto maior o peso, mais leve fica o exercício).</li>
+                        <li>Ajuste o apoio de joelho ou pé para ficar firme e centralizado.</li>
+                        <li>Segure a barra com pegada pronada ou neutra e suba na plataforma com controle.</li>
+                        <li>Inicie puxando as escápulas para baixo e finalize trazendo o queixo acima da barra.</li>
+                        <li>Desça devagar até quase estender os cotovelos, mantendo o core ativo.</li>
+                        <li>Para sair, trave o apoio primeiro e só depois solte as mãos.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="costas ombros" data-name="Face pull">
+                <header>
+                    <div>
+                        <p class="mini">Costas/Ombros</p>
+                        <h3>Face Pull</h3>
+                    </div>
+                    <span class="icon">🎭</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Posicione a polia na altura do rosto e conecte a corda.</li>
+                        <li>Fique a dois passos de distância, com pés alternados e joelhos semi flexionados.</li>
+                        <li>Puxe a corda em direção ao rosto, abrindo as mãos além da linha das orelhas.</li>
+                        <li>Mantenha o cotovelo alto e gire as escápulas para baixo e para trás.</li>
+                        <li>Volte controlando até os braços estenderem quase completamente.</li>
+                        <li>Se sentir trapézio demais, abaixe a carga e foque em afastar as orelhas.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas gluteo" data-name="Hip Thrust Máquina">
+                <header>
+                    <div>
+                        <p class="mini">Glúteo</p>
+                        <h3>Hip Thrust Máquina</h3>
+                    </div>
+                    <span class="icon">🚀</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste o encosto para que fique logo abaixo das escápulas quando você estiver sentado(a).</li>
+                        <li>Coloque a faixa ou barra acolchoada sobre o quadril e ajuste a altura do banco para formar 90° de joelho no topo.</li>
+                        <li>Posicione os pés na largura do quadril com pontas levemente abertas.</li>
+                        <li>Empurre o chão elevando o quadril até ombro-quadril-joelho ficarem alinhados, contraindo glúteos.</li>
+                        <li>Desça controlando até o glúteo chegar perto do chão sem perder a neutralidade da coluna.</li>
+                        <li>Use almofada extra se a faixa pressionar; sempre trave a máquina antes de sair.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <article class="equipment-card" data-tags="pernas posterior" data-name="Stiff Smith">
+                <header>
+                    <div>
+                        <p class="mini">Posterior</p>
+                        <h3>Stiff no Smith</h3>
+                    </div>
+                    <span class="icon">🪧</span>
+                </header>
+                <details>
+                    <summary>Passo a passo detalhado</summary>
+                    <ol>
+                        <li>Ajuste os limitadores de segurança na altura da canela para evitar alongamento excessivo.</li>
+                        <li>Posicione os pés na largura do quadril e segure a barra com pegada pronada.</li>
+                        <li>Destrave e desça empurrando o quadril para trás, mantendo a coluna neutra.</li>
+                        <li>Pare quando sentir alongamento forte nos posteriores ou a lombar tentar curvar.</li>
+                        <li>Suba contraindo glúteos e mantendo joelhos levemente flexionados.</li>
+                        <li>Reengate a barra ao final antes de sair de debaixo dela.</li>
+                    </ol>
+                </details>
+            </article>
+        </section>
     </main>
+
+    <footer>
+        <p>Conteúdo rápido para treinos sem dúvida. Feito para você, Ana 💙</p>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('search');
+        const chips = document.querySelectorAll('.chip');
+        const cards = document.querySelectorAll('.equipment-card');
+
+        function applyFilters() {
+            const term = searchInput.value.toLowerCase();
+            const activeChip = document.querySelector('.chip.active');
+            const chipTag = activeChip ? activeChip.dataset.filter : 'todos';
+
+            cards.forEach(card => {
+                const name = card.dataset.name.toLowerCase();
+                const tags = card.dataset.tags.toLowerCase();
+                const matchesText = name.includes(term) || tags.includes(term);
+                const matchesChip = chipTag === 'todos' || tags.includes(chipTag);
+                card.style.display = matchesText && matchesChip ? 'grid' : 'none';
+            });
+        }
+
+        searchInput.addEventListener('input', applyFilters);
+
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                chips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                applyFilters();
+            });
+        });
+
+        chips[chips.length - 1].classList.add('active');
+    </script>
 </body>
 </html>
